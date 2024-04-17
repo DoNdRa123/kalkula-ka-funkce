@@ -1,0 +1,54 @@
+print("Vítejte v programu kalkulačka.")
+def soucet(a, b):
+    return a + b
+
+
+def rozdil(a, b):
+    return a - b
+
+
+def soucin(a, b):
+    return a * b
+
+
+def podil(a, b):
+    return a / b
+
+def umocneni(a, b):
+    return a ** b
+
+
+
+while True:
+    print("Napište Operaci ""konec"" pro ukončení programu")
+    operace=input("Vyberte si operaci- sčítání, odčítání, násobení, dělení, umocnění, odmocnění:")
+
+
+  
+    hodnota1=float(input("Zadej první číslo"))
+    hodnota2=float(input("Zadej druhé číslo"))
+
+  
+    import math
+    if operace == "odmocnění":
+        print("Výsledek je:", math.sqrt(hodnota1))
+
+    if operace == "sčítání":
+        print("Výsledek je:", soucet(hodnota1, hodnota2))
+    elif operace == "umocnění":
+        print("Výsledek je:", umocneni(hodnota1, hodnota2))
+    elif operace == "odčítání":
+        print("Výsledek je:", rozdil(hodnota1, hodnota2))
+    elif operace == "násobení":
+        print("Výsledek je:", soucin(hodnota1, hodnota2))
+    elif operace == "dělení" and hodnota2 == 0:
+        print("Nulou nelze dělit")
+        print(podil(hodnota1,
+    elif operace == "dělení": hodnota2))
+    elif operace == "konec":
+        print("konec programu.")
+        break
+
+
+
+
